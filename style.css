@@ -1,0 +1,416 @@
+:root {
+  --background-image: linear-gradient(-225deg, #FF057C 0%, #7C64D5 48%, #4CC3FF 100%);
+  --main-background: #1b4fb8; /*color principal del fondo*/
+  --font-color: #fff; /*Color principal de las letras*/
+  --botton-background: #1da0cf;/*Color principal de las letras*/
+  --Two-color: #F6006B;
+  --tre-color:#1a1a1a;
+  /*colores gradientes*/
+  --primer-color:#200122;
+  --segundo-color:-webkit-linear-gradient(to right, #6f0000, #200122);
+  --tercer-color:linear-gradient(to right, #6f0000, #200122); 
+  /*uso completo para el gradiencie*/
+}
+
+header{
+  color:white
+}
+/* Agrega esta regla CSS en tu archivo de estilo personalizado */
+.navbar-light .navbar-nav .nav-link {
+  color: white !important; /* Cambia el color de la letra a blanco */
+  font-size: 20px;
+}
+/* Cambia el color de las tres líneas del icono del botón */
+.navbar-toggler-icon {
+  background-color: transparent; /* Cambia el color a blanco o el color deseado */
+  filter: invert(1); /* Invierte los colores para que las líneas sean blancas */
+}
+
+
+/* Cambia el color del enlace activo (página actual) */
+.navbar-light .navbar-nav .nav-link.active {
+  color: white !important;
+}
+
+/*########*/
+/* Estilos para el botón de volver al inicio */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  display: none;
+}
+/* Cambiar color al pasar el mouse sobre el botón */
+.scroll-to-top a {
+  text-decoration: none;
+  color: white;
+  background-color:#e73827;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Agregar transición suave */
+}
+.scroll-to-top a:hover {
+  background-color:var(--Two-color); /* Cambiar color de fondo al pasar el mouse */
+}
+.scroll-to-top a {
+  text-decoration: none;
+  color: white;
+}
+/* Mostrar el botón solo cuando el usuario desplace la página hacia abajo */
+body.scrolling .scroll-to-top {
+  display: block;
+}
+
+
+/* Barra de navegacion */
+body{
+ 
+  background: var(--primer-color);
+  background: var(--segundo-color);
+  background: var(--tercer-color);
+
+}
+.navbar {
+  padding: 0rem;
+  background-color: transparent;
+  
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+}
+
+/* Estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif, cursive;
+  color: rgb(219, 189, 20);
+}
+
+/*seccion para cmbiar color */
+.seccion-oscura {
+  color: rgb(255, 255, 255);
+  background-color: #1b1b32;
+}
+
+.seccion-clara {
+  color: rgb(241, 239, 236);
+  background-color: white;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: Arial, Helvetica, sans-serif, cursive;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+/* Seccion Hero */
+
+.hero {
+  background-color:transparent;/*color cambiar*/
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.hero-principal h2 {
+  font-size: 1.5rem;
+  color: #fdfdfd;
+}
+
+/* Sobre mi */
+
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+  background-color:transparent;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #b6141400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+/* Proyectos */
+
+
+/* tecnologias */
+
+.tecnologias {
+  padding: 40px 40px 80px 40px;
+  background-color: transparent;
+  
+}
+
+.tecnologias .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.tecnologias-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.tecnologias-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  
+}
+
+.tecnologias-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.tecnologias-info p {
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/* Contacto */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: rgb(223, 34, 138);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 90px;
+  width: 90px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
